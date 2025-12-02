@@ -1,0 +1,6 @@
+Axel;Blaze;67;blbla@trass.com;Matematicas;De Carrera;2015;true;Muface;Axel.png
+Byron;Love;28;lolob@trass.com;Informatica;En Practicas;2023;false;SS;Byron.png
+Jude;Sharp;67;shshj@trass.com;Matematicas;De Carrera;2015;true;Muface;Jude.png
+Mark;Evans;28;evevm@trass.com;Informatica;En Practicas;2023;false;SS;Mark.png
+Shawn;Frost;67;frfrs@trass.com;Matematicas;De Carrera;2015;true;Muface;Shawn.png
+Xavier;Foster;28;fofox@trass.com;Informatica;En Practicas;2023;false;SS;Xavier.png
