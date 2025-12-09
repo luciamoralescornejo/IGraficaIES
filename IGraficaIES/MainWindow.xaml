@@ -7,60 +7,103 @@
         mc:Ignorable="d"
         Title="IES Trassierra" Height="450" Width="700"
         WindowStartupLocation="CenterScreen"   
-        WindowStyle="ToolWindow"        
->
+    WindowStyle="ToolWindow">
+    <!-- WindowStartupLocation="CenterScreen": Pantalla centrada-->
+    
+    <!-- Contenedor principal -->
     <Grid>
+        <!-- Grid principal de una sola columna -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        
+        <!-- Barra de menú (ocupa dos columnas) -->
         <StackPanel x:Name="stkPanel" Grid.ColumnSpan="2" Margin="0,0,0,8">
             <Menu x:Name="mimenu">
+                <!-- Menú archivo dentro de la barra de menú-->
                 <MenuItem x:Name="menuArchivo" Header="_Archivo">
+                    
+                    <!-- Dentro de archivo está la opción de Abrir y ejecuta el método Abrir_Click -->
                     <MenuItem Header="Abrir"
                           Click="Abrir_Click">
+                        
+                        <!-- Contiene una imagen -->
                         <MenuItem.Icon>
                             <Image x:Name="menuAbrir"/>
                         </MenuItem.Icon>
                     </MenuItem>
+                    
+                    <!-- Separador para nueva opción -->
                     <Separator/>
+
+                    <!-- Dentro de archivo está la opción de Salir y ejecuta el método Salir_Click  -->
                     <MenuItem Header="Salir"
                           Click="Salir_Click">
+
+                        <!-- Contiene una imagen -->
                         <MenuItem.Icon>
                             <Image x:Name="menuSalir"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
+                
+                <!-- Menú fuente dentro de la barra de menú-->
                 <MenuItem x:Name="menuFuente" Header="_Fuente">
+
+                    <!-- Dentro de fuente está la opción de Negrita -->
                     <MenuItem Header="_Negrita" IsCheckable="True"
                         Checked="Negrita_Checked"
                         Unchecked="Negrita_Unchecked">
+
+                        <!-- Contiene una imagen -->
                         <MenuItem.Icon>
                             <Image x:Name="menuNegrita"/>
                         </MenuItem.Icon>
                     </MenuItem>
+
+                    <!-- Dentro de fuente está la opción de Cursiva -->
                     <MenuItem Header="_Cursiva" IsCheckable="True"
                         Checked="Cursiva_Checked"
                         Unchecked="Cursiva_Unchecked">
+
+                        <!-- Contiene una imagen -->
                         <MenuItem.Icon>
                             <Image x:Name="menuCursiva"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
+
+                <!-- Menú filtros dentro de la barra de menú-->
                 <MenuItem x:Name="menuFiltros" Header="F_iltros">
+                    
+                    <!-- Dentro del menu filtros está la opción: (header) -->
                     <MenuItem Click ="Filtro1_Click" Header="Edad mayor de 35 (nombre, apellidos, edad y materia)"/>
+                    <!-- Dentro del menu filtros está la opción: (header) -->
                     <MenuItem Click ="Filtro2_Click" Header="Año Ingreso igual o superior a 2010 (todo)"/>
+                    <!-- Dentro del menu filtros está la opción: (header) -->
                     <MenuItem Click ="Filtro3_Click" Header="Año Ingreso igual o superior a 2010 y Estado Civil es casado (nombre, apellidos, años y e.civil)"/>
+                    <!-- Dentro del menu filtros está la opción: (header) -->
                     <MenuItem Click ="Filtro4_Click" Header="Estatura superior a 160 y ordenados por Estatura descendente y Peso descendente (nombre, apellidos, edad, estatura)">
+                        
+                        <!-- Contiene una imagen -->
                         <MenuItem.Icon>
                             <Image x:Name="menuEstatura"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
+
+                <!-- Menú agrupación dentro de la barra de menú-->
                 <MenuItem x:Name="menuAgrupacion" Header="A_grupacion">
+                    <!-- Dentro del menu agrupación está la opción: (header) -->
                     <MenuItem Click ="Agrupacion1_Click" Header="Agrupar por E.Civil y mostrar nombre, apellidos, edad, peso y estatura"/>
+                    <!-- Dentro del menu agrupación está la opción: (header) -->
                     <MenuItem Click ="Agrupacion2_Click" Header="Agrupar por E.Civil y mostrar cuántos hay en cada grupo"/>
+                    <!-- Dentro del menu agrupación está la opción: (header) -->
                     <MenuItem Click ="Agrupacion3_Click" Header="Agrupar por Rangos de Edad, orden descendente por Edad y mostrar nombre, apellidos, edad"/>
+                    <!-- Dentro del menu agrupación está la opción: (header) -->
                     <MenuItem Click ="Agrupacion4_Click" Header="Agrupar por Seguro Médico, cuando la edad es igual o superior a 40, orden peso y apellidos (nombre, apellidos, seguro, peso)">
+                        
+                        <!-- Contiene una imagen -->
                         <MenuItem.Icon>
                             <Image x:Name="menuMedico"/>
                         </MenuItem.Icon>
@@ -70,8 +113,11 @@
             </Menu>
         </StackPanel>
 
+        <!-- Grid donde va el formulario de datos -->
         <Grid x:Name="gridCent" Margin="8,8,8,8">
             <Grid.RowDefinitions>
+                
+                <!-- Definición de las alturas de las filas -->
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="91*"/>
                 <RowDefinition Height="5*"/>
@@ -80,6 +126,7 @@
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
+                <!-- Definición del ancho de las columnas -->
                 <ColumnDefinition Width="15*"/>
                 <ColumnDefinition Width="10*"/>
                 <ColumnDefinition Width="15*"/>
@@ -89,20 +136,25 @@
                 <ColumnDefinition Width="15*"/>
             </Grid.ColumnDefinitions>
 
-
-
-            <!-- Fila 1-->
+            
+            <!-- FILA 1 -->
 
             <!--Columna 0 -->
+            
+            <!-- Dos etiquetas de texto (Label) -->
             <Label VerticalAlignment="Bottom" Margin="0,0,0,35" Name="lblNombre" Grid.Row="1" Grid.Column="0" Content="Nombre:"/>
             <Label VerticalAlignment="Bottom" Margin="0,0,0,0" Name="lblApellidos" Grid.Row="1" Grid.Column="0" Content="Apellidos:"/>
 
             <!--Columna 1 -->
+            
+            <!-- Dos cajas de texto (TextBox) -->
             <TextBox x:Name="txtNombre" 
                       VerticalAlignment="Bottom" Margin="0,0,0,40" 
                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
                       HorizontalAlignment="Left" 
                       Width="90" />
+            
+            <!-- Uso LostFocus para que cuando termine de escribir auntomáticamente pase a ejecutar los métodos -->
             <TextBox x:Name="txtApellidos" 
                       VerticalAlignment="Bottom" Margin="0,0,0,5" 
                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" 
@@ -111,49 +163,63 @@
                       Width="200" />
 
             <!--Columna 3 -->
+            
+            <!-- Etiqueta de texto para el email (Label) -->
             <Label Name="lblEmail" Content="Email:"
                    Grid.Row="1" Grid.Column="3"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
+            
+            <!-- Caja de texto para introducr el email (TextBox) -->
             <TextBox x:Name="txtEmail" Margin="10,0,0,0"
          VerticalAlignment="Center" HorizontalAlignment="Center"
          Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"
          Width="100" />
 
+            <!-- Hay un checkBox para marcar si hay destino definitivo -->
             <CheckBox x:Name="chkDestino" 
                       Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"
                       HorizontalAlignment="Center" VerticalAlignment="Bottom"
                       Margin="20,0,0,30" Content="Destino Definitivo"/>
+           
             <!--Columna 5-->
-            <Label Grid.Column="5"   Grid.Row="1" HorizontalAlignment="Left" 
+            <!-- Hay una etiqueta de texto (Label) -->
+            <Label Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" 
                    VerticalAlignment="Center" Width="50" Height="52" Margin="0,0,0,0" >
+                
+                <!-- Hay un bloque de texto donde poner la ruta de la foto -->
                 <TextBlock Name="lblRutaFoto" TextWrapping="Wrap" FontStyle="Normal" 
                            FontStretch="Normal" FontFamily="Arial Narrow" FontSize="13" 
                            Grid.ColumnSpan="2" Visibility="Hidden">
-                    Ruta foto
                 </TextBlock>
             </Label>
             
 
             <!--Columna 6-->
             <!--Añado un Tag Opcional para los campos que no son obligatorios-->
+            <!-- Hay un TextBox donde poner la ruta -->
             <TextBox x:Name="txtRutaFoto" Tag="OpcionalArchivo" 
                      Grid.Column="6"  Grid.Row="1" 
                      HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" 
                      VerticalAlignment="Center" Width="90"
                      FontFamily="Arial" FontStyle="Italic" Visibility="Hidden"  />
+            
+            <!-- Para mostrar la imagen -->
             <Image x:Name="imgFoto" 
                    Grid.Column="6" Grid.Row="1" 
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    Height="Auto" Width="Auto"
                    Grid.ColumnSpan="2" Grid.RowSpan="2" 
                    Margin="0,20,10,20"/>
+
             <!-- Fila 3 -->
 
             <!--Columna 0 -->
+            <!-- Tajeta de texto de edad -->
             <Label Margin="0,5,0,0" Name="lblEdad" Grid.Row="3" Grid.Column="0" Content="Edad:"/>
 
             <!--Columna 1 -->
+            <!-- ComboBox para mostrar edades -->
             <ComboBox x:Name="cmbEdad" 
                       VerticalAlignment="Top" HorizontalAlignment="Left"
                       Margin="0,5,0,0" 
@@ -161,29 +227,38 @@
                       Width="40"/>
 
             <!--Columna 2 -->
+            <!-- Tajeta de texto de año de ingreso -->
             <Label  Name="lblAnioIngreso" 
                     VerticalAlignment="top" HorizontalAlignment="Left" 
                     Grid.Row="3" Grid.Column="2" 
                     Content="Año Ingreso:"/>
+            
             <!--Columna 3 -->
-            <!--Añado un Tag Numero para los campos que son Numeros y necesitan Parseo-->
+            <!--Añado un Tag Numero para los campos que son numeros y necesitan parseo -->
+            <!-- TextBox para añadir el año de ingreso -->
             <TextBox x:Name="txtAnioIngreso"  Tag="Numero"
                      VerticalAlignment="Top" Margin="0,5,0,0" 
                      Grid.Row="3" Grid.Column="3"
                      HorizontalAlignment="Left" 
                      Width="60" />
+            
+            <!-- El StackPanel es el cuadro de tipo de funcionario -->
             <StackPanel x:Name="stkTipo" 
                         Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2"
                         HorizontalAlignment="Center" VerticalAlignment="Top"
                         Width="auto" Margin="10,0,0,0"
                         Height="auto">
+                
+                <!-- Label tipo de funcionario dentro del StackPanel -->
                 <Label Name="lblTipoFuncionario"
                        Content="Tipo funcionario:"/>
+                <!-- RadioButton en practicas dentro del StackPanel -->
                 <RadioButton x:Name="rdbEnPracticas" GroupName="TipoFuncionario" Content="En Prácticas"/>
+                <!-- RadioButton en carrera dentro del StackPanel -->
                 <RadioButton x:Name="rdbDeCarrera" GroupName="TipoFuncionario" Content="De Carrera"/>
 
-
             </StackPanel>
+            
             <!--Columna 5-->
             <Label Name="lblSegMedico" Content="S.Medico:"
                    Grid.Row="3" Grid.Column="5"/>

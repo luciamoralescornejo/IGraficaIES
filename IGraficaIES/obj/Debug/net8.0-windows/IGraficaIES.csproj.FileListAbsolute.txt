@@ -248,3 +248,4 @@ C:\Users\Usuario\source\repos\IGraficaIES\IGraficaIES\obj\Debug\net8.0-windows\r
 C:\Users\Usuario\source\repos\IGraficaIES\IGraficaIES\obj\Debug\net8.0-windows\IGraficaIES.pdb
 C:\Users\Usuario\source\repos\IGraficaIES\IGraficaIES\obj\Debug\net8.0-windows\IGraficaIES.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\IGraficaIES\IGraficaIES\obj\Debug\net8.0-windows\ref\IGraficaIES.dll
+C:\Users\Usuario\source\repos\IGraficaIES\IGraficaIES\obj\Debug\net8.0-windows\IGraficaIES.sourcelink.json

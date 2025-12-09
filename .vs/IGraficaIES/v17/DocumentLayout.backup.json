@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|c:\\users\\usuario\\source\\repos\\igraficaies\\igraficaies\\context\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|solutionrelative:igraficaies\\context\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|c:\\users\\usuario\\source\\repos\\igraficaies\\igraficaies\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|solutionrelative:igraficaies\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|c:\\users\\usuario\\source\\repos\\igraficaies\\igraficaies\\iempleadopublico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|solutionrelative:igraficaies\\iempleadopublico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|c:\\users\\usuario\\source\\repos\\igraficaies\\igraficaies\\profesorfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|solutionrelative:igraficaies\\profesorfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\Context\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "IGraficaIES\\Context\\MyDbContext.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\Context\\MyDbContext.cs",
-              "RelativeToolTip": "IGraficaIES\\Context\\MyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABdAAAAAAAAAA==",
+              "Title": "ProfesorFuncionario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ProfesorFuncionario.cs",
+              "RelativeDocumentMoniker": "IGraficaIES\\ProfesorFuncionario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ProfesorFuncionario.cs",
+              "RelativeToolTip": "IGraficaIES\\ProfesorFuncionario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T17:04:04.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "IGraficaIES\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\MainWindow.xaml.cs",
-              "RelativeToolTip": "IGraficaIES\\MainWindow.xaml.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAAAMoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T16:56:53.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IEmpleadoPublico.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\IEmpleadoPublico.cs",
-              "RelativeDocumentMoniker": "IGraficaIES\\IEmpleadoPublico.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\IEmpleadoPublico.cs",
-              "RelativeToolTip": "IGraficaIES\\IEmpleadoPublico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T16:55:45.374Z",
+              "WhenOpened": "2025-12-08T19:57:25.364Z",
               "EditorCaption": ""
             }
           ]

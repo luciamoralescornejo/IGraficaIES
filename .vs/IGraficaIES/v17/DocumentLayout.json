@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|c:\\users\\usuario\\source\\repos\\igraficaies\\igraficaies\\profesorfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|solutionrelative:igraficaies\\profesorfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|c:\\users\\usuario\\source\\repos\\igraficaies\\igraficaies\\clasewpfauxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C9C9A1-055B-40F0-9558-7AD16FCDB6D1}|IGraficaIES\\IGraficaIES.csproj|solutionrelative:igraficaies\\clasewpfauxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClaseWPFAuxiliar.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "RelativeDocumentMoniker": "IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "RelativeToolTip": "IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAGAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:32:44.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfesorFuncionario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ProfesorFuncionario.cs",
+              "RelativeDocumentMoniker": "IGraficaIES\\ProfesorFuncionario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ProfesorFuncionario.cs",
+              "RelativeToolTip": "IGraficaIES\\ProfesorFuncionario.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:57:25.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
