@@ -1,6 +1,6 @@
 ﻿namespace _2HerenciaSimpleIES
 {
-    // Enum que define los tipos de funcionarios/profesores
+    // AQUI VAN LOS ENUM (tipo de algo)
     public enum TipoFuncionario : uint
     {
         Interino = 1, // Profesor temporal
@@ -16,12 +16,12 @@
         private TipoFuncionario tipoProfesor; // Tipo de funcionario
 
         // Constructores protegidos, accesibles solo por subclases
-        protected Profesor() { }
+        public Profesor() { }
 
-        protected Profesor(int edad, string apellidos, string nombre)
+        public Profesor(int edad, string apellidos, string nombre)
             : base(edad, apellidos, nombre) { }
 
-        protected Profesor(string rutaFoto, int edad, string apellidos, string nombre)
+        public Profesor(string rutaFoto, int edad, string apellidos, string nombre)
             : base(rutaFoto, edad, apellidos, nombre) { }
 
         // Propiedad para acceder y modificar el tipo de funcionario
@@ -39,7 +39,7 @@
         }
 
         // Método abstracto ToString que obliga a las subclases a implementarlo
-        public abstract override string ToString();
+        public abstract override string ToString(); //crear string corto clase auxiliar
 
         // Método adicional que devuelve una cadena con información del profesor
         // Incluye datos base (nombre, apellidos, edad, etc.) + materia + tipo de funcionario

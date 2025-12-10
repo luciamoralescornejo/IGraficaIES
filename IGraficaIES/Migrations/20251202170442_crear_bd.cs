@@ -69,4 +69,12 @@ namespace IGraficaIES.Migrations
                 name: "ProfesoresFuncionarios");
         }
     }
+
+    //public class AntonioException : Exception
+    //{
+    //    public AntonioException() { }
+    //    public AntonioException(string? mensaje) : base(mensaje) { }
+
+
+    //}
 }

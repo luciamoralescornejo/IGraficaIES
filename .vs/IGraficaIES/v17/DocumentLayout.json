@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClaseWPFAuxiliar.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ClaseWPFAuxiliar.cs",
-              "RelativeDocumentMoniker": "IGraficaIES\\ClaseWPFAuxiliar.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ClaseWPFAuxiliar.cs",
-              "RelativeToolTip": "IGraficaIES\\ClaseWPFAuxiliar.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAGAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T17:32:44.561Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,9 +28,22 @@
               "RelativeDocumentMoniker": "IGraficaIES\\ProfesorFuncionario.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ProfesorFuncionario.cs",
               "RelativeToolTip": "IGraficaIES\\ProfesorFuncionario.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:57:25.364Z",
+              "WhenOpened": "2025-12-10T09:58:23.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClaseWPFAuxiliar.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "RelativeDocumentMoniker": "IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\IGraficaIES\\IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "RelativeToolTip": "IGraficaIES\\ClaseWPFAuxiliar.cs",
+              "ViewState": "AgIAAFEBAAAAAAAAAAAEwGMBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T09:54:52.201Z",
               "EditorCaption": ""
             }
           ]

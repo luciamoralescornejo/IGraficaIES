@@ -7,3 +7,70 @@
          
     </Application.Resources>
 </Application>
+
+
+<!--try
+{  
+    if (string.IsNullOrEmpty(File.ReadAllText(openFileDialog.FileName)))
+    {
+        throw new AntonioException("El fichero está vacio");
+    }
+    //Obtengo una colección de líneas (en cada una están los datos
+    //de un profesor), luego las iré recorriendo con un foreach
+    var lineas = File.ReadLines(openFileDialog.FileName);
+
+    foreach (var line in lineas)
+    {
+        string[] split = line.Split(";");
+        if (split.Length != 10)
+        {
+            throw new AntonioException("Cada linea del fichero ha de tener 10 campos");
+        }
+        //Diferencio entre profesores con y sin foto
+        if (split.Length == 9)
+        {
+            empleados.Add(new Empleado(split[0],
+                split[1],
+                Int32.Parse(split[2]),
+                Enum.Parse
+<TipoCiclo>(split[5]),
+                Double.Parse(split[6]),
+                split[7] == "true",
+                Enum.Parse
+    <TipoProgramador>(split[8])
+                )
+            );
+        }
+        else
+        {
+            empleados.Add(new Empleado(split[0],
+                split[1],
+                Int32.Parse(split[2]),
+                Enum.Parse
+        <TipoCiclo>(split[5]),
+                Double.Parse(split[6]),
+                split[7] == "true",
+                Enum.Parse
+            <TipoProgramador>(split[8]),
+                split[9]
+                )
+            );
+        }
+
+    }
+    empleadosEx = EmpleadoExtendido.GetEmpleadosE();
+    InsertarDatos(ref empleados);
+    InsertarDatos(ref empleadosEx);
+}
+catch (AntonioException ex)
+{
+    empleados.Clear();
+    //Mensajes de error en caso de no poder leer bien el fichero
+    Mensaje(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+}
+catch (Exception ex)
+{
+    empleados.Clear();
+    //Mensajes de error en caso de no poder leer bien el fichero
+    Mensaje("Error en la lectura del fichero", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+}-->

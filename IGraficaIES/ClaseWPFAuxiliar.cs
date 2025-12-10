@@ -130,6 +130,21 @@ namespace IGraficaIES
 
             // Devolvemos la cadena resultante con toda la información
             return cadena;
+
+            //string cadena = "";
+
+            //IEnumerable<System.Reflection.PropertyInfo> listaPropiedades = typeof(Empleado).GetProperties().Reverse();
+            ////para cada propiedad
+            //foreach (System.Reflection.PropertyInfo propiedad in listaPropiedades)
+            //{
+            //    if (propiedad.PropertyType != typeof(EmpleadoExtendido))
+            //    {
+            //        cadena += string.Format("{0}: {1} \n", propiedad.Name, propiedad.GetValue(this));
+            //    }
+            //}
+            //cadena += "\n";
+
+            //return cadena;
         }
 
         // Método genérico que recibe grupos de objetos y devuelve un string con todas sus propiedades y valores
