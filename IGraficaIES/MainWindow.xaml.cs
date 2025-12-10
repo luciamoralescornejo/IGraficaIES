@@ -586,6 +586,9 @@ namespace IGraficaIES
             MessageBox.Show(salida, "AGRUPAR POR Estado Civil con Contador", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
+        // public void Visualizar_Click(object sender, RoutedEventArgs e) {
+        //Mensaje(empleados[empActual].ToString(), "Empleado", MessageBoxButton.OK, MessageBoxImage.Information);}
+
         public void Agrupacion3_Click(object sender, RoutedEventArgs e)
         {
             // Proyectamos cada profesor en un nuevo objeto anónimo que incluye:
